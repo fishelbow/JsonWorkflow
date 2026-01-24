@@ -1,0 +1,35 @@
+Starting out with a little python refresher, current scoped goal is to extract the JSON file and load it,
+in either dictionary or list 
+
+we are here: 
+
+so in looking at the json.load()// holy smokes this thing does it all 
+        {} dictionary
+        [] list
+    auto- create dictionary and list based upon structure of JSON sweet 
+
+
+determine dependencies of tasks 
+
+seems straightforward so far, 
+
+## side notes I need to generate a JSON file off the example provided. done ##
+
+## also need to look more into defining visual workflow JSON workflow builder using REACT FLOW??
+    ## Explain what I have learned about REACT FLOW in regard to "JSON workflow builder"
+    // looks to be a webapp that would be local and have drag and drop nodes to create the JSON file
+    // that my python engine would execute. 
+    // more on this later as the concept forms. 
+
+## Directed Acyclic Graph what is it?
+## the DAG is a topology chart, with no loops basically a -> b -> c start to end no looping back around.
+
+okay so we are gonna have 3-stage workflow
+
+load and validate JSON  # completed at present maybe add a file selector dialog 
+
+resolve dependencies with logging 
+
+execute tasks in order with logging of completion 
+
+# going to add logging from the start 
