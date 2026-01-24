@@ -1,16 +1,22 @@
 import logging 
 from workflow_loader import openJSON
+from logging_config import setup_logging
 
 
 def main():
+    # configure logging at start of program run.
+
+    setup_logging()
+    logging.info("Ppogram started")
+
     workflow = openJSON()
 
     if workflow is None:
-        print("Cannot continue — workflow failed to load.")
+        logging.error("Workflow failed to load - exiting.")
         return
 
     # At this point, workflow is valid JSON
-    print("Workflow loaded successfully.")
+    logging.info("WorkFlow Loaded succesfully. Ready for next steps.")
 
 
     # Later:

@@ -3,7 +3,7 @@ in either dictionary or list
 
 we are here: 
 
-so in looking at the json.load()// holy smokes this thing does it all 
+so in looking at the JSON.load()// holy smokes this thing does it all 
         {} dictionary
         [] list
     auto- create dictionary and list based upon structure of JSON sweet 
@@ -32,4 +32,7 @@ resolve dependencies with logging
 
 execute tasks in order with logging of completion 
 
-# going to add logging from the start 
+# going to add logging from the start, well a little after the start, I am honestly impressed that logging
+is already established within the python code. 
+
+switching over print statements to meaningful logs. 
