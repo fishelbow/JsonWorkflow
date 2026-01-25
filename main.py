@@ -1,5 +1,5 @@
 import logging 
-from workflow_loader import openJSON
+from workflow_loader import open_JSON
 from logging_config import setup_logging
 
 
@@ -7,9 +7,9 @@ def main():
     # configure logging at start of program run.
 
     setup_logging()
-    logging.info("Ppogram started")
+    logging.info("Program started")
 
-    workflow = openJSON()
+    workflow = open_JSON()
 
     if workflow is None:
         logging.error("Workflow failed to load - exiting.")

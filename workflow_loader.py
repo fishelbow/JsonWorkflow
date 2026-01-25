@@ -1,7 +1,7 @@
 import json
 import logging 
 
-def openJSON():
+def open_JSON():
     data = None   # ensure data always exists, even if an exception happens
 
     try:
