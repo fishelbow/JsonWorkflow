@@ -1,12 +1,14 @@
 import logging 
 from workflow_loader import open_JSON
 from logging_config import setup_logging
+from workflow_resolver import resolve_dependencies
+from workflow_executor import execute_tasks
 
 
 def main():
     # configure logging at start of program run.
-
     setup_logging()
+
     logging.info("Program started")
 
     workflow = open_JSON()
@@ -19,8 +21,11 @@ def main():
     logging.info("WorkFlow Loaded succesfully. Ready for next steps.")
 
 
-    # Later:
-    # run_workflow(workflow)
+    # topology sort
+    order = resolve_dependencies(workflow["tasks"])
+
+    # tasks executed in order with regard to dependencies 
+    execute_tasks(order, workflow["tasks"])
 
 if __name__ == "__main__":
     main()

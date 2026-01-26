@@ -18,3 +18,134 @@
 2026-01-25 10:40:04: [INFO] Attempting to load worflow.json
 2026-01-25 10:40:04: [INFO] workflow.json loaded successfully
 2026-01-25 10:40:04: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-01-25 21:39:15: [INFO] Program started
+2026-01-25 21:39:15: [INFO] Attempting to load worflow.json
+2026-01-25 21:39:15: [INFO] workflow.json loaded successfully
+2026-01-25 21:39:15: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-01-25 21:39:15: [INFO] Resolving task dependencies
+2026-01-25 21:39:15: [INFO] Dependency resolution complete. Order: ['start', 'load_config', 'connect_db', 'fetch_user_data', 'fetch_system_data', 'process_data', 'generate_report', 'finish']
+2026-01-25 21:39:15: [INFO] Beginning task execution
+2026-01-25 21:39:15: [INFO] Starting task: start
+2026-01-25 21:39:15: [INFO] Task message: Starting workflow...
+2026-01-25 21:39:15: [INFO] Completed task: start
+2026-01-25 21:39:15: [INFO] Starting task: load_config
+2026-01-25 21:39:15: [INFO] Task message: Loading configuration
+2026-01-25 21:39:15: [INFO] Completed task: load_config
+2026-01-25 21:39:15: [INFO] Starting task: connect_db
+2026-01-25 21:39:15: [INFO] Task message: Connecting to database
+2026-01-25 21:39:15: [INFO] Completed task: connect_db
+2026-01-25 21:39:15: [INFO] Starting task: fetch_user_data
+2026-01-25 21:39:15: [INFO] Task message: Fetching user data
+2026-01-25 21:39:15: [INFO] Completed task: fetch_user_data
+2026-01-25 21:39:15: [INFO] Starting task: fetch_system_data
+2026-01-25 21:39:15: [INFO] Task message: Fetching system data
+2026-01-25 21:39:15: [INFO] Completed task: fetch_system_data
+2026-01-25 21:39:15: [INFO] Starting task: process_data
+2026-01-25 21:39:15: [INFO] Task message: Processing combined data
+2026-01-25 21:39:15: [INFO] Completed task: process_data
+2026-01-25 21:39:15: [INFO] Starting task: generate_report
+2026-01-25 21:39:15: [INFO] Task message: Generating report
+2026-01-25 21:39:15: [INFO] Completed task: generate_report
+2026-01-25 21:39:15: [INFO] Starting task: finish
+2026-01-25 21:39:15: [INFO] Task message: Workflow complete!
+2026-01-25 21:39:15: [INFO] Completed task: finish
+2026-01-25 21:39:15: [INFO] All tasks executed successfully
+2026-01-25 21:50:26: [INFO] Program started
+2026-01-25 21:50:26: [INFO] Attempting to load worflow.json
+2026-01-25 21:50:26: [INFO] workflow.json loaded successfully
+2026-01-25 21:50:26: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-01-25 21:50:26: [INFO] Resolving task dependencies
+2026-01-25 21:50:26: [INFO] Dependency resolution complete. Order: ['start', 'load_config', 'connect_db', 'fetch_user_data', 'fetch_system_data', 'process_data', 'generate_report', 'finish']
+2026-01-25 21:50:26: [INFO] Beginning task execution
+2026-01-25 21:50:26: [INFO] Starting task: start
+2026-01-25 21:50:26: [INFO] [PRINT] Starting workflow...
+2026-01-25 21:50:26: [INFO] Completed task: start
+2026-01-25 21:50:26: [INFO] Starting task: load_config
+2026-01-25 21:50:26: [INFO] [PRINT] Loading configuration
+2026-01-25 21:50:26: [INFO] Completed task: load_config
+2026-01-25 21:50:26: [INFO] Starting task: connect_db
+2026-01-25 21:50:26: [INFO] [PRINT] Connecting to database
+2026-01-25 21:50:26: [INFO] Completed task: connect_db
+2026-01-25 21:50:26: [INFO] Starting task: fetch_user_data
+2026-01-25 21:50:26: [INFO] [PRINT] Fetching user data
+2026-01-25 21:50:26: [INFO] Completed task: fetch_user_data
+2026-01-25 21:50:26: [INFO] Starting task: fetch_system_data
+2026-01-25 21:50:26: [INFO] [PRINT] Fetching system data
+2026-01-25 21:50:26: [INFO] Completed task: fetch_system_data
+2026-01-25 21:50:26: [INFO] Starting task: process_data
+2026-01-25 21:50:26: [INFO] [PRINT] Processing combined data
+2026-01-25 21:50:26: [INFO] Completed task: process_data
+2026-01-25 21:50:26: [INFO] Starting task: generate_report
+2026-01-25 21:50:26: [INFO] [PRINT] Generating report
+2026-01-25 21:50:26: [INFO] Completed task: generate_report
+2026-01-25 21:50:26: [INFO] Starting task: finish
+2026-01-25 21:50:26: [INFO] [PRINT] Workflow complete!
+2026-01-25 21:50:26: [INFO] Completed task: finish
+2026-01-25 21:50:26: [INFO] All tasks executed successfully
+2026-01-25 21:52:09: [INFO] Program started
+2026-01-25 21:52:09: [INFO] Attempting to load worflow.json
+2026-01-25 21:52:09: [INFO] workflow.json loaded successfully
+2026-01-25 21:52:09: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-01-25 21:52:09: [INFO] Resolving task dependencies
+2026-01-25 21:52:09: [INFO] Dependency resolution complete. Order: ['hello', 'start', 'list_files', 'load_config', 'connect_db', 'run_python', 'fetch_user_data', 'fetch_system_data', 'process_data', 'generate_report', 'finish']
+2026-01-25 21:52:09: [INFO] Beginning task execution
+2026-01-25 21:52:09: [INFO] Starting task: hello
+2026-01-25 21:52:09: [INFO] [PRINT] Hello from workflow!
+2026-01-25 21:52:09: [INFO] Completed task: hello
+2026-01-25 21:52:09: [INFO] Starting task: start
+2026-01-25 21:52:09: [INFO] [PRINT] Starting workflow...
+2026-01-25 21:52:09: [INFO] Completed task: start
+2026-01-25 21:52:09: [INFO] Starting task: list_files
+2026-01-25 21:52:09: [INFO] [SHELL] Running: dir
+2026-01-25 21:52:09: [INFO] Completed task: list_files
+2026-01-25 21:52:09: [INFO] Starting task: load_config
+2026-01-25 21:52:09: [INFO] [PRINT] Loading configuration
+2026-01-25 21:52:09: [INFO] Completed task: load_config
+2026-01-25 21:52:09: [INFO] Starting task: connect_db
+2026-01-25 21:52:09: [INFO] [PRINT] Connecting to database
+2026-01-25 21:52:09: [INFO] Completed task: connect_db
+2026-01-25 21:52:09: [INFO] Starting task: run_python
+2026-01-25 21:52:09: [INFO] [PYTHON] Running function: tasks.sample_function
+2026-01-25 21:52:09: [ERROR] Python function failed: No module named 'tasks'
+2026-01-25 21:52:09: [ERROR] Task run_python failed. Stopping workflow.
+2026-01-25 21:54:15: [INFO] Program started
+2026-01-25 21:54:15: [INFO] Attempting to load worflow.json
+2026-01-25 21:54:15: [INFO] workflow.json loaded successfully
+2026-01-25 21:54:15: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-01-25 21:54:15: [INFO] Resolving task dependencies
+2026-01-25 21:54:15: [INFO] Dependency resolution complete. Order: ['start', 'hello', 'load_config', 'connect_db', 'list_files', 'fetch_user_data', 'fetch_system_data', 'run_python', 'process_data', 'generate_report', 'finish']
+2026-01-25 21:54:15: [INFO] Beginning task execution
+2026-01-25 21:54:15: [INFO] Starting task: start
+2026-01-25 21:54:15: [INFO] [PRINT] Starting workflow...
+2026-01-25 21:54:15: [INFO] Completed task: start
+2026-01-25 21:54:15: [INFO] Starting task: hello
+2026-01-25 21:54:15: [INFO] [PRINT] Hello from workflow!
+2026-01-25 21:54:15: [INFO] Completed task: hello
+2026-01-25 21:54:15: [INFO] Starting task: load_config
+2026-01-25 21:54:15: [INFO] [PRINT] Loading configuration
+2026-01-25 21:54:15: [INFO] Completed task: load_config
+2026-01-25 21:54:15: [INFO] Starting task: connect_db
+2026-01-25 21:54:15: [INFO] [PRINT] Connecting to database
+2026-01-25 21:54:15: [INFO] Completed task: connect_db
+2026-01-25 21:54:15: [INFO] Starting task: list_files
+2026-01-25 21:54:15: [INFO] [SHELL] Running: dir
+2026-01-25 21:54:15: [INFO] Completed task: list_files
+2026-01-25 21:54:15: [INFO] Starting task: fetch_user_data
+2026-01-25 21:54:15: [INFO] [PRINT] Fetching user data
+2026-01-25 21:54:15: [INFO] Completed task: fetch_user_data
+2026-01-25 21:54:15: [INFO] Starting task: fetch_system_data
+2026-01-25 21:54:15: [INFO] [PRINT] Fetching system data
+2026-01-25 21:54:15: [INFO] Completed task: fetch_system_data
+2026-01-25 21:54:15: [INFO] Starting task: run_python
+2026-01-25 21:54:15: [INFO] [PYTHON] Running function: tasks.sample_function
+2026-01-25 21:54:15: [INFO] Completed task: run_python
+2026-01-25 21:54:15: [INFO] Starting task: process_data
+2026-01-25 21:54:15: [INFO] [PRINT] Processing combined data
+2026-01-25 21:54:15: [INFO] Completed task: process_data
+2026-01-25 21:54:15: [INFO] Starting task: generate_report
+2026-01-25 21:54:15: [INFO] [PRINT] Generating report
+2026-01-25 21:54:15: [INFO] Completed task: generate_report
+2026-01-25 21:54:15: [INFO] Starting task: finish
+2026-01-25 21:54:15: [INFO] [PRINT] Workflow complete!
+2026-01-25 21:54:15: [INFO] Completed task: finish
+2026-01-25 21:54:15: [INFO] All tasks executed successfully

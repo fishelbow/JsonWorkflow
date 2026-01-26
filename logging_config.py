@@ -1,5 +1,8 @@
 import logging 
 
+# as a not might come back later and implement roatating logs. 
+
+
 def setup_logging():
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)

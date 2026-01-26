@@ -36,3 +36,9 @@ execute tasks in order with logging of completion
 is already established within the python code. 
 
 switching over print statements to meaningful logs. 
+
+I have a topology sort now with workflow_resolver 
+
+I also have workflow_executor, I would like to expand the types part now. 
+
+going to do a task_runner to handle the different tasks.

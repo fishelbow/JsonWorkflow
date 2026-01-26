@@ -53,6 +53,25 @@
       "type": "print",
       "message": "Workflow complete!",
       "depends_on": ["generate_report"]
+    },
+    {
+      "id": "hello",
+      "type": "print",
+      "message": "Hello from workflow!"
+    },
+    {
+      "id": "list_files",
+      "type": "shell",
+      "command": "dir",
+      "depends_on": ["hello"]
+    },
+    {
+      "id": "run_python",
+      "type": "python",
+      "function": "tasks.sample_function",
+      "depends_on": ["list_files"]
     }
+
+
   ]
 }
