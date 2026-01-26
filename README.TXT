@@ -41,4 +41,21 @@ I have a topology sort now with workflow_resolver
 
 I also have workflow_executor, I would like to expand the types part now. 
 
-going to do a task_runner to handle the different tasks.
+going to do a task_runner to handle the different tasks. hmm
+
+going to switch to task plugin system
+
+🔹Add Rotating logs
+
+🔹 Add retries
+Let tasks retry on failure with exponential backoff.
+🔹 Add timeouts
+Prevent tasks from hanging forever.
+🔹 Add task outputs
+Let tasks pass data to each other.
+🔹 Add parallel execution
+Run independent tasks at the same time.
+🔹 Add per‑task log files
+Each task gets its own log file for debugging.
+🔹 Add a scheduler
+Run workflows on a schedule (hourly, daily, etc.)

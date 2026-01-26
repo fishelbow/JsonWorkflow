@@ -3,11 +3,13 @@ from workflow_loader import open_JSON
 from logging_config import setup_logging
 from workflow_resolver import resolve_dependencies
 from workflow_executor import execute_tasks
+from task_runner import load_plugins
 
 
 def main():
     # configure logging at start of program run.
     setup_logging()
+    load_plugins()
 
     logging.info("Program started")
 

@@ -149,3 +149,61 @@
 2026-01-25 21:54:15: [INFO] [PRINT] Workflow complete!
 2026-01-25 21:54:15: [INFO] Completed task: finish
 2026-01-25 21:54:15: [INFO] All tasks executed successfully
+2026-01-25 22:05:44: [INFO] Loading task plugins...
+2026-01-25 22:05:44: [WARNING] Plugin print_task missing TASK_TYPE or run()
+2026-01-25 22:05:44: [WARNING] Plugin python_task missing TASK_TYPE or run()
+2026-01-25 22:05:44: [WARNING] Plugin shell_task missing TASK_TYPE or run()
+2026-01-25 22:05:44: [INFO] Program started
+2026-01-25 22:05:44: [INFO] Attempting to load worflow.json
+2026-01-25 22:05:44: [INFO] workflow.json loaded successfully
+2026-01-25 22:05:44: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-01-25 22:05:44: [INFO] Resolving task dependencies
+2026-01-25 22:05:44: [INFO] Dependency resolution complete. Order: ['hello', 'start', 'list_files', 'load_config', 'connect_db', 'run_python', 'fetch_user_data', 'fetch_system_data', 'process_data', 'generate_report', 'finish']
+2026-01-25 22:05:44: [INFO] Beginning task execution
+2026-01-25 22:05:44: [INFO] Starting task: hello
+2026-01-25 22:05:44: [ERROR] Unknown task type: print
+2026-01-25 22:05:44: [ERROR] Task hello failed. Stopping workflow.
+2026-01-25 22:08:04: [INFO] Loading task plugins...
+2026-01-25 22:08:04: [INFO] Registered task type: print
+2026-01-25 22:08:04: [INFO] Registered task type: python
+2026-01-25 22:08:04: [INFO] Registered task type: shell
+2026-01-25 22:08:04: [INFO] Program started
+2026-01-25 22:08:04: [INFO] Attempting to load worflow.json
+2026-01-25 22:08:04: [INFO] workflow.json loaded successfully
+2026-01-25 22:08:04: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-01-25 22:08:04: [INFO] Resolving task dependencies
+2026-01-25 22:08:04: [INFO] Dependency resolution complete. Order: ['hello', 'start', 'list_files', 'load_config', 'connect_db', 'run_python', 'fetch_user_data', 'fetch_system_data', 'process_data', 'generate_report', 'finish']
+2026-01-25 22:08:04: [INFO] Beginning task execution
+2026-01-25 22:08:04: [INFO] Starting task: hello
+2026-01-25 22:08:04: [INFO] [PRINT] Hello from workflow!
+2026-01-25 22:08:04: [INFO] Completed task: hello
+2026-01-25 22:08:04: [INFO] Starting task: start
+2026-01-25 22:08:04: [INFO] [PRINT] Starting workflow...
+2026-01-25 22:08:04: [INFO] Completed task: start
+2026-01-25 22:08:04: [INFO] Starting task: list_files
+2026-01-25 22:08:04: [INFO] [SHELL] Running: dir
+2026-01-25 22:08:04: [INFO] Completed task: list_files
+2026-01-25 22:08:04: [INFO] Starting task: load_config
+2026-01-25 22:08:04: [INFO] [PRINT] Loading configuration
+2026-01-25 22:08:04: [INFO] Completed task: load_config
+2026-01-25 22:08:04: [INFO] Starting task: connect_db
+2026-01-25 22:08:04: [INFO] [PRINT] Connecting to database
+2026-01-25 22:08:04: [INFO] Completed task: connect_db
+2026-01-25 22:08:04: [INFO] Starting task: run_python
+2026-01-25 22:08:04: [INFO] Completed task: run_python
+2026-01-25 22:08:04: [INFO] Starting task: fetch_user_data
+2026-01-25 22:08:04: [INFO] [PRINT] Fetching user data
+2026-01-25 22:08:04: [INFO] Completed task: fetch_user_data
+2026-01-25 22:08:04: [INFO] Starting task: fetch_system_data
+2026-01-25 22:08:04: [INFO] [PRINT] Fetching system data
+2026-01-25 22:08:04: [INFO] Completed task: fetch_system_data
+2026-01-25 22:08:04: [INFO] Starting task: process_data
+2026-01-25 22:08:04: [INFO] [PRINT] Processing combined data
+2026-01-25 22:08:04: [INFO] Completed task: process_data
+2026-01-25 22:08:04: [INFO] Starting task: generate_report
+2026-01-25 22:08:04: [INFO] [PRINT] Generating report
+2026-01-25 22:08:04: [INFO] Completed task: generate_report
+2026-01-25 22:08:04: [INFO] Starting task: finish
+2026-01-25 22:08:04: [INFO] [PRINT] Workflow complete!
+2026-01-25 22:08:04: [INFO] Completed task: finish
+2026-01-25 22:08:04: [INFO] All tasks executed successfully

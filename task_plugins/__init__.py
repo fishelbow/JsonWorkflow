@@ -1,0 +1,1 @@
+# Marks task_plugins as a package for plugin auto-discovery.
