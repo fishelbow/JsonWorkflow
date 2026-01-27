@@ -9,6 +9,7 @@ from task_runner import load_plugins
 def main():
     # configure logging at start of program run.
     setup_logging()
+
     load_plugins()
 
     logging.info("Program started")

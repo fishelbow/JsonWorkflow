@@ -45,6 +45,18 @@ going to do a task_runner to handle the different tasks. hmm
 
 going to switch to task plugin system
 
+### I would like to take a minute and talk about the choices that lead to using the plugin system along with the task_runner
+
+I enjoy modular design and orthogonal code. Originally the task_runner was just going to use a if/if else structure
+this however would become long and a little and messy. I found that I can use a folder with separate scripts and use them 
+as loadable plugins. 
+
+this allows the workflow engine to be extensible, if I need a new task type I just define a script and put it in the plugin
+folder. 
+
+
+########################################################################################################################
+
 🔹Add Rotating logs
 
 🔹 Add retries
@@ -59,3 +71,5 @@ Run independent tasks at the same time.
 Each task gets its own log file for debugging.
 🔹 Add a scheduler
 Run workflows on a schedule (hourly, daily, etc.)
+
+might turn off console and go log only

@@ -33,10 +33,3 @@ def open_JSON():
 
     return data
 
-
-def main():
-    openJSON()
-
-
-if __name__ == "__main__":
-    main()
