@@ -2,6 +2,10 @@ import requests
 import logging
 
 TASK_TYPE = "api_call"
+DESCRIPTION = "Makes an HTTP request and stores the response"
+VERSION = "1.0"
+REQUIRED_FIELDS = ["url"]
+
 
 def run(task):
     url = task.get("url")
