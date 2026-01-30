@@ -1,6 +1,9 @@
 import logging
 
 TASK_TYPE = "python"
+DESCRIPTION = "Imports and executes a Python function"
+VERSION = "1.0"
+REQUIRED_FIELDS = ["function"]
 
 def run(task):
     func_path = task.get("function")
