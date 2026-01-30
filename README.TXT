@@ -49,13 +49,16 @@ going to switch to task plugin system
 
 I enjoy modular design and orthogonal code. Originally the task_runner was just going to use a if/if else structure
 this however would become long and a little and messy. I found that I can use a folder with separate scripts and use them 
-as loadable plugins. 
+as loadable plugins, through the use of task_runner
+
 
 this allows the workflow engine to be extensible, if I need a new task type I just define a script and put it in the plugin
 folder. 
 
 
 ########################################################################################################################
+
+🔹 Add an API call task 
 
 🔹Add Rotating logs
 

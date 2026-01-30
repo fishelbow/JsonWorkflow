@@ -10,7 +10,7 @@ def main():
     # configure logging at start of program run.
     setup_logging()
 
-    load_plugins()
+    load_plugins() # --> plugins are added in the plugin folder 
 
     logging.info("Program started")
 

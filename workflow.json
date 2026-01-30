@@ -5,49 +5,42 @@
       "type": "print",
       "message": "Starting workflow..."
     },
-
     {
       "id": "load_config",
       "type": "print",
       "message": "Loading configuration",
       "depends_on": ["start"]
     },
-
     {
       "id": "connect_db",
       "type": "print",
       "message": "Connecting to database",
       "depends_on": ["start"]
     },
-
     {
       "id": "fetch_user_data",
       "type": "print",
       "message": "Fetching user data",
       "depends_on": ["connect_db"]
     },
-
     {
       "id": "fetch_system_data",
       "type": "print",
       "message": "Fetching system data",
       "depends_on": ["connect_db"]
     },
-
     {
       "id": "process_data",
       "type": "print",
       "message": "Processing combined data",
       "depends_on": ["fetch_user_data", "fetch_system_data", "load_config"]
     },
-
     {
       "id": "generate_report",
       "type": "print",
       "message": "Generating report",
       "depends_on": ["process_data"]
     },
-
     {
       "id": "finish",
       "type": "print",
@@ -70,8 +63,16 @@
       "type": "python",
       "function": "tasks.sample_function",
       "depends_on": ["list_files"]
+    },
+    {
+      "id": "weather",
+      "type": "api_call",
+      "url": "https://api.open-meteo.com/v1/forecast",
+      "params": {
+        "latitude": 40.2,
+        "longitude": -76.9,
+        "current_weather": true
+      }
     }
-
-
   ]
 }
