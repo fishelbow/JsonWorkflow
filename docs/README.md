@@ -2,42 +2,6 @@ Workflow Engine Architecture Overview
 
 
 
-│   main.py
-│
-├───docs
-│       JSON_API.md
-│       pluginguide.md
-│       README.md
-│
-├───engine
-│       logging_config.py
-│       task_runner.py
-│       workflow_executor.py
-│       workflow_loader.py
-│       workflow_resolver.py
-│       __init__.py
-│
-├───logs
-│       workflow.log
-│
-├───schemas
-│       workflow.schema.JSON
-│
-├───tasks
-│       tasks.py
-│       __init__.py
-│
-├───task_plugins
-│       api_call.py
-│       print_task.py
-│       python_task.py
-│       shell_task.py
-│       __init__.py
-│
-├───tests
-└───workflows
-        workflow.JSON
-
 Logging
 A centralized logging system is configured at startup.
 All engine components and plugins write to this unified logger.
