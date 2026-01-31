@@ -11,7 +11,7 @@ You will create a small Python program that reads a workflow from a JSON file an
 Step-by-Step Checklist:
 ✅ Step 1: Load the workflow JSON
 
-Read a JSON file into Python using the json module.
+Read a JSON file into Python using the JSON module.
 Store tasks in a dictionary or list.
 ✅ Step 2: Understand task dependencies
 
