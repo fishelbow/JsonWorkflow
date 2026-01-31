@@ -19,7 +19,7 @@ def setup_logging():
 
     # file handler
     try:
-        file_handler = logging.FileHandler("worflow.log", mode ="a")
+        file_handler = logging.FileHandler("logs/workflow.log", mode ="a")
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
     except Exception as e:

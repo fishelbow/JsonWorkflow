@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Workflow Definition Schema",
+  "description": "Schema for workflow.json used by the Workflow Engine",
+
+  "type": "object",
+  "required": ["tasks"],
+
+  "properties": {
+    "tasks": {
+      "type": "array",
+      "description": "List of tasks to execute",
+      "items": {
+        "type": "object",
+        "required": ["id", "type"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the task"
+          },
+          "type": {
+            "type": "string",
+            "description": "Must match a plugin's TASK_TYPE"
+          },
+          "depends_on": {
+            "type": "array",
+            "description": "List of task IDs that must run before this task",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          }
+        },
+
+        "additionalProperties": true
+      }
+    }
+  }
+}

@@ -1,4 +1,9 @@
+
 {
+"$comment": "using a schema to validate the json before compile",
+
+  "$schema": "./workflow.schema.json",
+
   "tasks": [
     {
       "id": "start",
@@ -61,7 +66,7 @@
     {
       "id": "run_python",
       "type": "python",
-      "function": "tasks.sample_function",
+      "function": "tasks.tasks.sample_function",
       "depends_on": ["list_files"]
     },
     {

@@ -9,7 +9,7 @@ def open_JSON():
         logging.info("Attempting to load worflow.json")
 
         # open and read JSON
-        with open("workflow.json", "r") as jsonFile:
+        with open("workflows/workflow.json", "r") as jsonFile:
             data = json.load(jsonFile)
 
 
