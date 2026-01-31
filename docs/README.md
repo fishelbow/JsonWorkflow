@@ -64,24 +64,31 @@ Task Lifecycle
 Next Steps Roadmap
 The workflow engine is designed to be modular and extensible.
 Upcoming enhancements will expand reliability, observability, and execution power.
+
 🔹 Rotating Logs
 Prevent log files from growing indefinitely.
 Essential for long‑running workflows and production deployments.
+
 🔹 Retries with Exponential Backoff
 Automatically retry failed tasks with configurable:
 • 	retry count
 • 	delay
 • 	backoff multiplier
+
 🔹 Task Timeouts
 Force‑fail tasks that hang or exceed a maximum runtime.
+
 🔹 Task Outputs / Data Passing
 Enhance the current  mechanism into a structured global context system.
+
 🔹 Parallel Execution
 Run independent tasks concurrently when dependencies allow.
 Major performance boost for branching DAGs.
+
 🔹 Per‑Task Log Files
 Each task writes to its own dedicated log file.
 Improves debugging and isolates noisy plugins.
+
 🔹 Workflow Scheduler
 Run workflows automatically on a schedule (hourly, daily, weekly).
 Transforms the engine into a lightweight orchestrator similar to Airflow or Prefect
