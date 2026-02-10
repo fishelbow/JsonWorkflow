@@ -92,4 +92,7 @@ Major performance boost for branching DAGs.
 Run workflows automatically on a schedule (hourly, daily, weekly).
 Transforms the engine into a lightweight orchestrator similar to Airflow or Prefect
 
+🔹 Add some more test's.
+Testing is new to me and it would be a great idea to get familair with the process.
+
 
