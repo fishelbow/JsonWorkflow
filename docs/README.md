@@ -19,7 +19,7 @@ Discovers and imports task plugins dynamically from the plugin directory.
 Task Registry
 Stores plugin metadata and execution functions, making them available to the executor.
 Task Runner
-Validates tasks against plugin metadata and dispatches them to the correct plugin’s  function.
+Validates tasks against plugin metadata and dispatches them to the correct plugin’s function.
 
 Workflow Loader
 - Reads workflow.JSON
@@ -61,6 +61,9 @@ Task Lifecycle
 - Output stored in task["output"]
 - Used by dependent tasks
 
+
+
+
 Next Steps Roadmap
 The workflow engine is designed to be modular and extensible.
 Upcoming enhancements will expand reliability, observability, and execution power.
@@ -84,10 +87,6 @@ Enhance the current  mechanism into a structured global context system.
 🔹 Parallel Execution
 Run independent tasks concurrently when dependencies allow.
 Major performance boost for branching DAGs.
-
-🔹 Per‑Task Log Files
-Each task writes to its own dedicated log file.
-Improves debugging and isolates noisy plugins.
 
 🔹 Workflow Scheduler
 Run workflows automatically on a schedule (hourly, daily, weekly).
