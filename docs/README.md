@@ -1,7 +1,5 @@
 Workflow Engine Architecture Overview
 
-
-
 Logging
 A centralized logging system is configured at startup.
 All engine components and plugins write to this unified logger.
@@ -72,7 +70,7 @@ Upcoming enhancements will expand reliability, observability, and execution powe
 Prevent log files from growing indefinitely.
 Essential for long‑running workflows and production deployments.
 
-🔹 Retries with Exponential Backoff
+🔹 Retries with Exponential Backoff or jitter maybe.
 Automatically retry failed tasks with configurable:
 • 	retry count
 • 	delay
