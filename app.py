@@ -1,40 +1,37 @@
-import logging 
+import logging
 from src.engine.workflow_loader import open_JSON
 from src.engine.logging_config import setup_logging
-from src.engine.workflow_resolver import resolve_dependencies
-from src.engine.workflow_executor import execute_tasks
 from src.engine.task_runner import load_plugins
+from src.engine.core import run_workflow
 
 
-# this is the local CLI for the WorkFlow engine and testing. 
-
-
+# Local CLI entry point for the workflow engine
 def main():
-    # configure logging at start of program run.
+    # Configure logging
     setup_logging()
+    logging.info("CLI started")
 
-    load_plugins() # --> plugins are added in the plugin folder and dynamically loaded 
+    try:
+        # Load plugins
+        load_plugins()
+        logging.info("Plugins loaded")
 
-    logging.info("Program started")
+        # Load workflow JSON from disk
+        workflow = open_JSON()
+        if workflow is None:
+            logging.error("Workflow failed to load - exiting.")
+            return
 
-    workflow = open_JSON()
+        logging.info("Workflow loaded successfully")
 
-    if workflow is None:
-        logging.error("Workflow failed to load - exiting.")
+        # Run workflow through the engine
+        result = run_workflow(workflow)
+        logging.info(f"Workflow completed with result: {result}")
+
+    except Exception as e:
+        logging.exception(f"Fatal error in CLI: {e}")
         return
 
-    # At this point, workflow is valid JSON
-    logging.info("WorkFlow Loaded succesfully. Ready for next steps.")
-
-
-    # topology sort
-    order = resolve_dependencies(workflow["tasks"])
-
-    # tasks executed in order with regard to dependencies 
-    execute_tasks(order, workflow["tasks"])
 
 if __name__ == "__main__":
     main()
-
-
-
