@@ -157,3 +157,137 @@
 2026-02-25 20:56:10: [INFO] [PRINT] Workflow complete!
 2026-02-25 20:56:10: [INFO] Completed task: finish
 2026-02-25 20:56:10: [INFO] All tasks executed successfully
+2026-04-07 21:03:06: [INFO] Loading task plugins...
+2026-04-07 21:04:30: [INFO] Loading task plugins...
+2026-04-07 21:08:57: [INFO] Loading task plugins...
+2026-04-07 21:09:45: [INFO] Loading task plugins...
+2026-04-07 21:10:01: [INFO] Loading task plugins...
+2026-04-07 21:10:35: [INFO] Loading task plugins...
+2026-04-07 21:14:43: [INFO] Loading task plugins...
+2026-04-07 21:17:12: [INFO] Loading task plugins...
+2026-04-07 21:17:13: [INFO] Loading task plugins...
+2026-04-07 21:17:31: [INFO] Loading task plugins...
+2026-04-07 21:18:41: [INFO] Loading task plugins...
+2026-04-07 21:20:11: [INFO] Loading task plugins...
+2026-04-07 21:20:13: [INFO] Registered task type: api_call
+2026-04-07 21:20:13: [INFO] Registered task type: print
+2026-04-07 21:20:13: [INFO] Registered task type: python
+2026-04-07 21:20:13: [INFO] Registered task type: shell
+2026-04-07 21:20:13: [INFO] Program started
+2026-04-07 21:20:13: [INFO] Attempting to load worflow.json
+2026-04-07 21:20:13: [INFO] workflow.json loaded successfully
+2026-04-07 21:20:13: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-04-07 21:20:13: [INFO] Resolving task dependencies
+2026-04-07 21:20:13: [INFO] Dependency resolution complete. Order: ['start', 'hello', 'weather', 'load_config', 'connect_db', 'list_files', 'fetch_user_data', 'fetch_system_data', 'run_python', 'process_data', 'generate_report', 'finish']
+2026-04-07 21:20:13: [INFO] Beginning task execution
+2026-04-07 21:20:13: [INFO] Starting task: start
+2026-04-07 21:20:13: [INFO] [PRINT] Starting workflow...
+2026-04-07 21:20:13: [INFO] Completed task: start
+2026-04-07 21:20:13: [INFO] Starting task: hello
+2026-04-07 21:20:13: [INFO] [PRINT] Hello from workflow!
+2026-04-07 21:20:13: [INFO] Completed task: hello
+2026-04-07 21:20:13: [INFO] Starting task: weather
+2026-04-07 21:20:13: [INFO] API call: GET https://api.open-meteo.com/v1/forecast
+2026-04-07 21:20:14: [INFO] Status: 200
+2026-04-07 21:20:14: [INFO] Completed task: weather
+2026-04-07 21:20:14: [INFO] Starting task: load_config
+2026-04-07 21:20:14: [INFO] [PRINT] Loading configuration
+2026-04-07 21:20:14: [INFO] Completed task: load_config
+2026-04-07 21:20:14: [INFO] Starting task: connect_db
+2026-04-07 21:20:14: [INFO] [PRINT] Connecting to database
+2026-04-07 21:20:14: [INFO] Completed task: connect_db
+2026-04-07 21:20:14: [INFO] Starting task: list_files
+2026-04-07 21:20:14: [INFO] [SHELL] Running: dir
+2026-04-07 21:20:14: [INFO] Completed task: list_files
+2026-04-07 21:20:14: [INFO] Starting task: fetch_user_data
+2026-04-07 21:20:14: [INFO] [PRINT] Fetching user data
+2026-04-07 21:20:14: [INFO] Completed task: fetch_user_data
+2026-04-07 21:20:14: [INFO] Starting task: fetch_system_data
+2026-04-07 21:20:14: [INFO] [PRINT] Fetching system data
+2026-04-07 21:20:14: [INFO] Completed task: fetch_system_data
+2026-04-07 21:20:14: [INFO] Starting task: run_python
+2026-04-07 21:20:14: [ERROR] Python function failed: No module named 'tasks'
+2026-04-07 21:20:14: [ERROR] Task run_python failed. Stopping workflow.
+2026-04-07 21:32:52: [INFO] Loading task plugins...
+2026-04-07 21:32:52: [INFO] Registered task type: api_call
+2026-04-07 21:32:52: [INFO] Registered task type: print
+2026-04-07 21:32:52: [INFO] Registered task type: python
+2026-04-07 21:32:52: [INFO] Registered task type: shell
+2026-04-07 21:32:52: [INFO] Program started
+2026-04-07 21:32:52: [INFO] Attempting to load worflow.json
+2026-04-07 21:32:52: [INFO] workflow.json loaded successfully
+2026-04-07 21:32:52: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-04-07 21:32:52: [INFO] Resolving task dependencies
+2026-04-07 21:32:52: [INFO] Dependency resolution complete. Order: ['weather', 'hello', 'start', 'list_files', 'load_config', 'connect_db', 'run_python', 'fetch_user_data', 'fetch_system_data', 'process_data', 'generate_report', 'finish']
+2026-04-07 21:32:52: [INFO] Beginning task execution
+2026-04-07 21:32:52: [INFO] Starting task: weather
+2026-04-07 21:32:52: [INFO] API call: GET https://api.open-meteo.com/v1/forecast
+2026-04-07 21:32:53: [INFO] Status: 200
+2026-04-07 21:32:53: [INFO] Completed task: weather
+2026-04-07 21:32:53: [INFO] Starting task: hello
+2026-04-07 21:32:53: [INFO] [PRINT] Hello from workflow!
+2026-04-07 21:32:53: [INFO] Completed task: hello
+2026-04-07 21:32:53: [INFO] Starting task: start
+2026-04-07 21:32:53: [INFO] [PRINT] Starting workflow...
+2026-04-07 21:32:53: [INFO] Completed task: start
+2026-04-07 21:32:53: [INFO] Starting task: list_files
+2026-04-07 21:32:53: [INFO] [SHELL] Running: dir
+2026-04-07 21:32:53: [INFO] Completed task: list_files
+2026-04-07 21:32:53: [INFO] Starting task: load_config
+2026-04-07 21:32:53: [INFO] [PRINT] Loading configuration
+2026-04-07 21:32:53: [INFO] Completed task: load_config
+2026-04-07 21:32:53: [INFO] Starting task: connect_db
+2026-04-07 21:32:53: [INFO] [PRINT] Connecting to database
+2026-04-07 21:32:53: [INFO] Completed task: connect_db
+2026-04-07 21:32:53: [INFO] Starting task: run_python
+2026-04-07 21:32:53: [ERROR] Python function failed: No module named 'tasks'
+2026-04-07 21:32:53: [ERROR] Task run_python failed. Stopping workflow.
+2026-04-07 21:36:12: [INFO] Loading task plugins...
+2026-04-07 21:36:13: [INFO] Registered task type: api_call
+2026-04-07 21:36:13: [INFO] Registered task type: print
+2026-04-07 21:36:13: [INFO] Registered task type: python
+2026-04-07 21:36:13: [INFO] Registered task type: shell
+2026-04-07 21:36:13: [INFO] Program started
+2026-04-07 21:36:13: [INFO] Attempting to load worflow.json
+2026-04-07 21:36:13: [INFO] workflow.json loaded successfully
+2026-04-07 21:36:13: [INFO] WorkFlow Loaded succesfully. Ready for next steps.
+2026-04-07 21:36:13: [INFO] Resolving task dependencies
+2026-04-07 21:36:13: [INFO] Dependency resolution complete. Order: ['weather', 'hello', 'start', 'list_files', 'load_config', 'connect_db', 'run_python', 'fetch_user_data', 'fetch_system_data', 'process_data', 'generate_report', 'finish']
+2026-04-07 21:36:13: [INFO] Beginning task execution
+2026-04-07 21:36:13: [INFO] Starting task: weather
+2026-04-07 21:36:13: [INFO] API call: GET https://api.open-meteo.com/v1/forecast
+2026-04-07 21:36:13: [INFO] Status: 200
+2026-04-07 21:36:13: [INFO] Completed task: weather
+2026-04-07 21:36:13: [INFO] Starting task: hello
+2026-04-07 21:36:13: [INFO] [PRINT] Hello from workflow!
+2026-04-07 21:36:13: [INFO] Completed task: hello
+2026-04-07 21:36:13: [INFO] Starting task: start
+2026-04-07 21:36:13: [INFO] [PRINT] Starting workflow...
+2026-04-07 21:36:13: [INFO] Completed task: start
+2026-04-07 21:36:13: [INFO] Starting task: list_files
+2026-04-07 21:36:13: [INFO] [SHELL] Running: dir
+2026-04-07 21:36:14: [INFO] Completed task: list_files
+2026-04-07 21:36:14: [INFO] Starting task: load_config
+2026-04-07 21:36:14: [INFO] [PRINT] Loading configuration
+2026-04-07 21:36:14: [INFO] Completed task: load_config
+2026-04-07 21:36:14: [INFO] Starting task: connect_db
+2026-04-07 21:36:14: [INFO] [PRINT] Connecting to database
+2026-04-07 21:36:14: [INFO] Completed task: connect_db
+2026-04-07 21:36:14: [INFO] Starting task: run_python
+2026-04-07 21:36:14: [INFO] Completed task: run_python
+2026-04-07 21:36:14: [INFO] Starting task: fetch_user_data
+2026-04-07 21:36:14: [INFO] [PRINT] Fetching user data
+2026-04-07 21:36:14: [INFO] Completed task: fetch_user_data
+2026-04-07 21:36:14: [INFO] Starting task: fetch_system_data
+2026-04-07 21:36:14: [INFO] [PRINT] Fetching system data
+2026-04-07 21:36:14: [INFO] Completed task: fetch_system_data
+2026-04-07 21:36:14: [INFO] Starting task: process_data
+2026-04-07 21:36:14: [INFO] [PRINT] Processing combined data
+2026-04-07 21:36:14: [INFO] Completed task: process_data
+2026-04-07 21:36:14: [INFO] Starting task: generate_report
+2026-04-07 21:36:14: [INFO] [PRINT] Generating report
+2026-04-07 21:36:14: [INFO] Completed task: generate_report
+2026-04-07 21:36:14: [INFO] Starting task: finish
+2026-04-07 21:36:14: [INFO] [PRINT] Workflow complete!
+2026-04-07 21:36:14: [INFO] Completed task: finish
+2026-04-07 21:36:14: [INFO] All tasks executed successfully

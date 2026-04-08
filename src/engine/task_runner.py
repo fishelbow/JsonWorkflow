@@ -1,7 +1,8 @@
 import logging
 import importlib
 import pkgutil
-import task_plugins
+import src.task_plugins as task_plugins
+
 
 TASK_REGISTRY = {}
 
@@ -9,7 +10,7 @@ def load_plugins():
     logging.info("Loading task plugins...")
 
     for _, module_name, _ in pkgutil.iter_modules(task_plugins.__path__):
-        module = importlib.import_module(f"task_plugins.{module_name}")
+        module = importlib.import_module(f"src.task_plugins.{module_name}")
 
         task_type = getattr(module, "TASK_TYPE", None)
         run_func = getattr(module, "run", None)
